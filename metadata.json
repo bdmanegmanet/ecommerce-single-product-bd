@@ -1,0 +1,8 @@
+{
+  "name": "E-Commerce Single Product BD",
+  "description": "Single product e-commerce order system with cash on delivery and admin dashboard for Bangladesh.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

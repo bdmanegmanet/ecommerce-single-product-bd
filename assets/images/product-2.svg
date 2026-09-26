@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow2" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+    <linearGradient id="bodyAngle" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="8" dy="22" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgGlow2)"/>
+
+  <g filter="url(#shadow2)" transform="rotate(-15 300 300)">
+    <!-- Back Sensor Housing -->
+    <rect x="180" y="180" width="240" height="240" rx="55" fill="url(#bodyAngle)" stroke="#475569" stroke-width="4"/>
+
+    <!-- Optical Sensor Ring -->
+    <circle cx="300" cy="300" r="75" fill="#090d16" stroke="#0d9488" stroke-width="5"/>
+    <circle cx="300" cy="300" r="50" fill="#020617"/>
+
+    <!-- Sensor LEDs -->
+    <circle cx="280" cy="285" r="10" fill="#22c55e" opacity="0.85"/>
+    <circle cx="320" cy="285" r="10" fill="#22c55e" opacity="0.85"/>
+    <circle cx="300" cy="320" r="12" fill="#ef4444" opacity="0.85"/>
+
+    <!-- Magnetic Charging Contacts -->
+    <circle cx="300" cy="240" r="6" fill="#eab308"/>
+    <circle cx="300" cy="360" r="6" fill="#eab308"/>
+
+    <!-- Engravings -->
+    <text x="300" y="215" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle" letter-spacing="1">IP68 WATERPROOF · BIO-SENSOR 5.0</text>
+    <text x="300" y="390" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle" letter-spacing="1">DESIGNED FOR EXCELLENCE · CE</text>
+
+    <!-- Straps Angle -->
+    <path d="M 230,60 L 370,60 L 355,180 L 245,180 Z" fill="#1e293b"/>
+    <path d="M 245,420 L 355,420 L 370,540 L 230,540 Z" fill="#1e293b"/>
+  </g>
+
+  <!-- Feature callout -->
+  <g transform="translate(380, 80)">
+    <rect width="180" height="70" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="90" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="middle">বায়োমেট্রিক সেন্সর</text>
+    <text x="90" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">হার্ট রেট ও স্লিপ ট্র্যাকার</text>
+  </g>
+</svg>

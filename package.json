@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce-single-product-bd",
+  "version": "1.0.0",
+  "description": "Single product e-commerce system with cash on delivery and admin dashboard for Bangladesh",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Build successful'"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="dialGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="strapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="30%" stop-color="#334155"/>
+      <stop offset="70%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgGlow)"/>
+
+  <g filter="url(#shadow)">
+    <!-- Top Strap -->
+    <path d="M 230,50 L 370,50 L 360,200 L 240,200 Z" fill="url(#strapGrad)" rx="12"/>
+    <line x1="250" y1="90" x2="350" y2="90" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+    <line x1="250" y1="120" x2="350" y2="120" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+    <line x1="250" y1="150" x2="350" y2="150" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Bottom Strap -->
+    <path d="M 240,400 L 360,400 L 370,550 L 230,550 Z" fill="url(#strapGrad)" rx="12"/>
+    <rect x="285" y="440" width="30" height="12" rx="4" fill="#0f172a" stroke="#475569"/>
+    <rect x="285" y="475" width="30" height="12" rx="4" fill="#0f172a" stroke="#475569"/>
+    <rect x="285" y="510" width="30" height="12" rx="4" fill="#0f172a" stroke="#475569"/>
+
+    <!-- Watch Case / Bezel -->
+    <rect x="175" y="175" width="250" height="250" rx="60" fill="url(#bodyGrad)" stroke="#334155" stroke-width="3"/>
+    <rect x="183" y="183" width="234" height="234" rx="54" fill="none" stroke="url(#bezelGrad)" stroke-width="4"/>
+
+    <!-- Dial Screen -->
+    <rect x="195" y="195" width="210" height="210" rx="46" fill="url(#dialGrad)"/>
+
+    <!-- Dial UI Graphics -->
+    <!-- Circular progress ring -->
+    <circle cx="300" cy="300" r="85" fill="none" stroke="#1e293b" stroke-width="8"/>
+    <circle cx="300" cy="300" r="85" fill="none" stroke="#0d9488" stroke-width="8" stroke-dasharray="534" stroke-dashoffset="140" stroke-linecap="round"/>
+
+    <!-- Time display -->
+    <text x="300" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" fill="#ffffff" text-anchor="middle">10:48</text>
+    <text x="300" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#2dd4bf" text-anchor="middle" letter-spacing="2">AM · THU 25</text>
+
+    <!-- Metrics -->
+    <g transform="translate(235, 345)">
+      <circle cx="15" cy="15" r="12" fill="#0f766e" opacity="0.3"/>
+      <path d="M 15,9 C 11,9 9,13 15,19 C 21,13 19,9 15,9 Z" fill="#2dd4bf"/>
+      <text x="32" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">78 bpm</text>
+    </g>
+
+    <g transform="translate(320, 345)">
+      <circle cx="15" cy="15" r="12" fill="#0f766e" opacity="0.3"/>
+      <path d="M 12,21 L 18,21 L 18,9 L 12,15 Z" fill="#2dd4bf"/>
+      <text x="32" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">8,420</text>
+    </g>
+
+    <!-- Side Button / Crown -->
+    <rect x="424" y="270" width="10" height="42" rx="4" fill="#64748b" stroke="#334155"/>
+    <rect x="423" y="330" width="8" height="28" rx="3" fill="#475569"/>
+  </g>
+
+  <!-- Spec Badge -->
+  <g transform="translate(40, 520)">
+    <rect width="160" height="38" rx="8" fill="#0f766e"/>
+    <text x="80" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">PREMIUM EDITION</text>
+  </g>
+</svg>
